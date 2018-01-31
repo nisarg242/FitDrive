@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/tableCSS.css" rel="stylesheet" />
+    <title> FitDrive </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/F_icon.ico" />
+    <link href="boot/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="css/jquery.dataTables.js"></script>
+    <script src="boot/js/bootstrap.js"></script>
+    <script src="css/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow22.js"></script>
+    <link href="boot/css/bootstrap.css" rel="stylesheet" />
+    <style>
+        h1
+        {
+            padding-top:10px;
+            text-align:center;
+        }
+        .social
+        {
+            position:fixed;
+            left:0;
+            top:100px;
+            z-index:10;                
+        }
+        .social img
+        {
+            width:50px;
+        }
+        .cad
+        {
+            float:left;
+        }
+        .price
+        {
+            float:right;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $('#example').dataTable();
+        });
+    </script>
+    
+
+</head>
+<body>
+    <div class="social desktop">
+        <a href="https://www.facebook.com/nisarg.rana.5"><img src="images/icons/Facebook.png" /></a><br />
+        <a href="https://www.linkedin.com/in/nisarg-rana-23574882?trk=nav_responsive_tab_profile_pic"><img src="images/icons/Linkedin.png" /></a><br />
+        <a href="http://www.twitter.com"><img src="images/icons/Twitter.png" /></a><br />
+        <a href="https://www.youtube.com/channel/UCrAHhtRZAhWIPsnzkUDzxkg"><img src="images/icons/YouTube.png" /></a>
+    </div>
+    <div id="container">      
+        <!--navigation menu-->
+        <nav style="font-size:20px;" class="navbar navbar-default navbar-fixed-top topnav navbar-inverse" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div style="padding-bottom:10px; padding-top:10px;" class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" href="index.html"><span style="color: #ff6a00; font-size: 25px;"><img src="images/Logo/F_logo1.png" width="40" style="line-height:20px;" /> Fit</span><span style="font-size: 25px;">Drive</span></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul style="padding-bottom:10px; padding-top:10px;" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Product List</a>
+                        </li>
+
+                        <li>
+                            <a href="email.html">Join Email</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div id="banner" class="desktop">
+            <img src="images/banner/banner_02.jpg" class="bnr-margin" alt="home banner image" />
+        </div>
+        <div id="main">
+            <main style="overflow-x:auto;">
+                <h1>Product List (New Arrival)</h1>
+                <table id="example" class="table table-striped table-responsive table-hover table-bordered">
+                    <thead>
+                        <tr class="frstrw">
+                            <th>Product</th>
+                            <th>Brand</th>
+                            <th>Description</th>
+                            <th>Color</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="other">
+                            <th>Extrem Grip</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;20</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Cusion Grip</th>
+                            <td>Maxcraft</td>
+                            <td>Thin, black and long</td>
+                            <td>Blue</td>
+                            <td>Precision</td>
+                            <td>&#36;29</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Though</th>
+                            <td>Stenly</td>
+                            <td>Short, white and soft</td>
+                            <td>Red</td>
+                            <td>Standard</td>
+                            <td>&#36;49</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Torx</th>
+                            <td>Tekton</td>
+                            <td>Small, Blue and soft</td>
+                            <td>White</td>
+                            <td>Stubby</td>
+                            <td>&#36;59</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Handle</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;19</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Tamper Proof</th>
+                            <td>Craftman</td>
+                            <td>Long, soft and white</td>
+                            <td>Black</td>
+                            <td>Precision</td>
+                            <td>&#36;39</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Magnetic</th>
+                            <td>Maxcraft</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Standard</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Ultimate</th>
+                            <td>Stenly</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;21</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Fold 'N' Lock</th>
+                            <td>Telkon</td>
+                            <td>Thin, black and long</td>
+                            <td>White</td>
+                            <td>Standard</td>
+                            <td>&#36;41</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Rachet Bit Driver</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Long handle</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>LED</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;32</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Extrem Grip</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;20</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Cusion Grip</th>
+                            <td>Maxcraft</td>
+                            <td>Thin, black and long</td>
+                            <td>Blue</td>
+                            <td>Precision</td>
+                            <td>&#36;29</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Though</th>
+                            <td>Stenly</td>
+                            <td>Short, white and soft</td>
+                            <td>Red</td>
+                            <td>Standard</td>
+                            <td>&#36;49</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Torx</th>
+                            <td>Tekton</td>
+                            <td>Small, Blue and soft</td>
+                            <td>White</td>
+                            <td>Stubby</td>
+                            <td>&#36;59</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Handle</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;19</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Tamper Proof</th>
+                            <td>Craftman</td>
+                            <td>Long, soft and white</td>
+                            <td>Black</td>
+                            <td>Precision</td>
+                            <td>&#36;39</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Magnetic</th>
+                            <td>Maxcraft</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Standard</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Ultimate</th>
+                            <td>Stenly</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;21</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Fold 'N' Lock</th>
+                            <td>Telkon</td>
+                            <td>Thin, black and long</td>
+                            <td>White</td>
+                            <td>Standard</td>
+                            <td>&#36;41</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Rachet Bit Driver</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Long handle</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>LED</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;32</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Extrem Grip</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;20</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Cusion Grip</th>
+                            <td>Maxcraft</td>
+                            <td>Thin, black and long</td>
+                            <td>Blue</td>
+                            <td>Precision</td>
+                            <td>&#36;29</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Though</th>
+                            <td>Stenly</td>
+                            <td>Short, white and soft</td>
+                            <td>Red</td>
+                            <td>Standard</td>
+                            <td>&#36;49</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Torx</th>
+                            <td>Tekton</td>
+                            <td>Small, Blue and soft</td>
+                            <td>White</td>
+                            <td>Stubby</td>
+                            <td>&#36;59</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Handle</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;19</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Tamper Proof</th>
+                            <td>Craftman</td>
+                            <td>Long, soft and white</td>
+                            <td>Black</td>
+                            <td>Precision</td>
+                            <td>&#36;39</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Magnetic</th>
+                            <td>Maxcraft</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Standard</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Ultimate</th>
+                            <td>Stenly</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;21</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Fold 'N' Lock</th>
+                            <td>Telkon</td>
+                            <td>Thin, black and long</td>
+                            <td>White</td>
+                            <td>Standard</td>
+                            <td>&#36;41</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Rachet Bit Driver</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Long handle</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>LED</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;32</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Extrem Grip</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;20</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Cusion Grip</th>
+                            <td>Maxcraft</td>
+                            <td>Thin, black and long</td>
+                            <td>Blue</td>
+                            <td>Precision</td>
+                            <td>&#36;29</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Though</th>
+                            <td>Stenly</td>
+                            <td>Short, white and soft</td>
+                            <td>Red</td>
+                            <td>Standard</td>
+                            <td>&#36;49</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Torx</th>
+                            <td>Tekton</td>
+                            <td>Small, Blue and soft</td>
+                            <td>White</td>
+                            <td>Stubby</td>
+                            <td>&#36;59</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Handle</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;19</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Tamper Proof</th>
+                            <td>Craftman</td>
+                            <td>Long, soft and white</td>
+                            <td>Black</td>
+                            <td>Precision</td>
+                            <td>&#36;39</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Magnetic</th>
+                            <td>Maxcraft</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Standard</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Ultimate</th>
+                            <td>Stenly</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;21</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Fold 'N' Lock</th>
+                            <td>Telkon</td>
+                            <td>Thin, black and long</td>
+                            <td>White</td>
+                            <td>Standard</td>
+                            <td>&#36;41</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Rachet Bit Driver</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Long handle</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>LED</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;32</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Extrem Grip</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;20</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Cusion Grip</th>
+                            <td>Maxcraft</td>
+                            <td>Thin, black and long</td>
+                            <td>Blue</td>
+                            <td>Precision</td>
+                            <td>&#36;29</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Though</th>
+                            <td>Stenly</td>
+                            <td>Short, white and soft</td>
+                            <td>Red</td>
+                            <td>Standard</td>
+                            <td>&#36;49</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Torx</th>
+                            <td>Tekton</td>
+                            <td>Small, Blue and soft</td>
+                            <td>White</td>
+                            <td>Stubby</td>
+                            <td>&#36;59</td>
+                        </tr>
+                        <tr class="other">
+                            <th>T-Handle</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>White</td>
+                            <td>Long handle</td>
+                            <td>&#36;19</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Tamper Proof</th>
+                            <td>Craftman</td>
+                            <td>Long, soft and white</td>
+                            <td>Black</td>
+                            <td>Precision</td>
+                            <td>&#36;39</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Magnetic</th>
+                            <td>Maxcraft</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Standard</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Ultimate</th>
+                            <td>Stenly</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;21</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Fold 'N' Lock</th>
+                            <td>Telkon</td>
+                            <td>Thin, black and long</td>
+                            <td>White</td>
+                            <td>Standard</td>
+                            <td>&#36;41</td>
+                        </tr>
+                        <tr class="other">
+                            <th>Rachet Bit Driver</th>
+                            <td>Kaisi</td>
+                            <td>small, red and soft</td>
+                            <td>Black</td>
+                            <td>Long handle</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr class="other">
+                            <th>LED</th>
+                            <td>Craftman</td>
+                            <td>Thin, white and long</td>
+                            <td>Red</td>
+                            <td>Stubby</td>
+                            <td>&#36;32</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="margin-top:40px;">
+                    <div class="col-xs-4">
+                        <div class="panel panel-info" style="height:600px; overflow:scroll;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Long Screwdrivers</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="product1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="panel panel-info" style="height:600px; overflow:scroll;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Short Screwdrivers</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="product2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="panel panel-info" style="height:600px; overflow:scroll;">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Thin Screwdrivers</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="product3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="product">
+                <section>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <a><img src="images/screwdriver01.jpg" /></a><br />
+                        <p><a href="#" style="color:#243b6d;">Extrem Grip Screwdriver</a></p>
+                        <p style="width:30%; margin:0 auto 0 auto;"><a class="cad">CAD</a><a class="price">$19</a></p>
+                        <a href="#"><img src="images/buyNow.png" alt="buy now" width="100" /></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <a><img src="images/screwdriver02.jpg" /></a><br />
+                        <p><a href="#" style="color:#243b6d;">Cusion-Grip Screwdriver</a></p>
+                        <p style="width:30%; margin:0 auto 0 auto;"><a class="csd">CAD</a><a class="price">$15</a></p>
+                        <a href="#"><img src="images/buyNow.png" alt="buy now" width="100" /></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <a><img src="images/screwdriver03.jpg" /></a><br />
+                        <p><a href="#">T-Though Screwdriver</a></p>
+                        <p style="width:30%; margin:0 auto 0 auto;"><a class="cad">CAD</a><a class="price">$25</a></p>
+                        <a href="#"><img src="images/buyNow.png" alt="buy now" width="100" /></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <a><img src="images/screwdriver04.jpg" /></a><br />
+                        <p><a href="#" style="color:#243b6d;">Torx Screwdriver</a></p>
+                        <p style="width:30%; margin:0 auto 0 auto;"><a class="cad">CAD</a><a class="price">$29</a></p>
+                        <a href="#"><img src="images/buyNow.png" alt="buy now" width="100" /></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer style="border-top:1px solid #ccc; box-shadow:0px -2px 5px #ccc;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 mobile">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="http://www.facebook.com" class="icns"><span class="fa fa-facebook-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.twitter.com" class="icns"><span class="fa fa-twitter-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.youtube.com" class="icns"><span class="fa fa-youtube-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.googleplus.com" class="icns"><span class="fa fa-google-plus-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" class="icns"><span class="fa fa-linkedin-square"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" col-xs-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="index.html" class="ftrfnt">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="about.html" class="ftrfnt">About</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="product.html" class="ftrfnt">Product list</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="email.html" class="ftrfnt">Join Email</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="contact.html" class="ftrfnt">Contact</a>
+                            </li>
+                        </ul>
+                        <span class="ftrfnt desktop">&copy; Copyright 2017. All Rights Reserved.</span><br />
+                        <a href="mailto:info@fitdrive.net" class="ftrfnt2 desktop">Request information</a><br />
+                        <span class="ftrfnt2">Nisarg Rana &nbsp;&nbsp; c0685310 </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+		$(document).ready(function(){
+		    $.getJSON("product1.json", function (data) {
+		        $.each(data, function () {
+		            $.each(this, function (key, value) {
+		                $("#product1").append(
+                        "Product: " + value.Product + "<br>" +
+                        "Brand: " + value.Brand + "<br>" +
+                        "Description: " + value.Description + "<br>" +
+                        "Color: " + value.Color + "<br>" +
+                        "Stock:" + value.Stock + "<br>" +
+                        "Price: " + value.Price + "<br><br>"
+                        );
+		            });
+		        });
+		    });
+		    $.getJSON("product2.json", function (data) {
+		        $.each(data, function () {
+		            $.each(this, function (key, value) {
+		                $("#product2").append(
+                        "Product: " + value.Product + "<br>" +
+                        "Brand: " + value.Brand + "<br>" +
+                        "Description: " + value.Description + "<br>" +
+                        "Color: " + value.Color + "<br>" +
+                        "Stock:" + value.Stock + "<br>" +
+                        "Price: " + value.Price + "<br><br>"
+                        );
+		            });
+		        });
+		    });
+		    $.getJSON("product3.json", function (data) {
+		        $.each(data, function () {
+		            $.each(this, function (key, value) {
+		                $("#product3").append(
+                        "Product: " + value.Product + "<br>" +
+                        "Brand: " + value.Brand + "<br>" +
+                        "Description: " + value.Description + "<br>" +
+                        "Color: " + value.Color + "<br>" +
+                        "Stock:" + value.Stock + "<br>" +
+                        "Price: " + value.Price + "<br><br>"
+                        );
+		            });
+		        });
+		    });
+
+
+		});
+    </script>
+    
+</body>
+</html>

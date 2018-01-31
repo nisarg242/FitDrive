@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+		"Product":"T-Handle",
+		"Brand":"Kaisi",
+		"Description":"Long, red and soft",
+		"Color":"White",
+    "Type": "Standard",
+    "In-Stock": "14",
+		"Price":"&#36; 90"
+	},
+  {
+    "Product": "Rachet Bit Driver",
+    "Brand": "Kaisi",
+    "Description": "Long, red and soft",
+    "Color": "Black",
+    "Type": "Long handle",
+    "In-Stock": "57",
+    "Price": "&#36; 72"
+  },
+  {
+		"Product":"Cusion Grip",
+		"Brand":"Maxcraft",
+		"Description":"Long, black and long",
+		"Color":"Blue",
+    "Type": "Precision",
+    "In-Stock": "70",
+		"Price":"&#36; 86"
+	},
+	{
+		"Product":"Fold 'N' Lock",
+		"Brand":"Telkon",
+		"Description":"Long, black and long",
+		"Color":"White",
+    "Type": "Standard",
+    "In-Stock": "50",
+		"Price":"&#36; 46"
+	},
+	{
+		"Product":"LED",
+		"Brand":"Craftman",
+		"Description":"Long, white and long",
+		"Color":"Red",
+    "Type": "Stubby",
+    "In-Stock": "32",
+		"Price":"&#36; 64"
+	},
+  {
+    "Product": "Magnetic",
+    "Brand": "Maxcraft",
+    "Description": "Long, red and soft",
+    "Color": "Black",
+    "Type": "Standard",
+    "In-Stock": "97",
+    "Price": "&#36; 35"
+  },
+  {
+		"Product":"T-Handle",
+		"Brand":"Kaisi",
+		"Description":"Long, red and soft",
+		"Color":"White",
+    "Type": "Standard",
+    "In-Stock": "14",
+		"Price":"&#36; 90"
+	},
+	{
+		"Product":"Rachet Bit Driver",
+		"Brand":"Kaisi",
+		"Description":"Long, red and soft",
+		"Color":"Black",
+    "Type": "Long handle",
+    "In-Stock": "57",
+		"Price":"&#36; 72"
+	},
+    {
+      "Product": "Cusion Grip",
+      "Brand": "Maxcraft",
+      "Description": "Long, black and long",
+      "Color": "Blue",
+      "Type": "Precision",
+      "In-Stock": "70",
+      "Price": "&#36; 86"
+    },
+    {
+      "Product": "Fold 'N' Lock",
+      "Brand": "Telkon",
+      "Description": "Long, black and long",
+      "Color": "White",
+      "Type": "Standard",
+      "In-Stock": "50",
+      "Price": "&#36; 46"
+    },
+    {
+      "Product": "LED",
+      "Brand": "Craftman",
+      "Description": "Long, white and long",
+      "Color": "Red",
+      "Type": "Stubby",
+      "In-Stock": "32",
+      "Price": "&#36; 64"
+    },
+    {
+      "Product": "Magnetic",
+      "Brand": "Maxcraft",
+      "Description": "Long, red and soft",
+      "Color": "Black",
+      "Type": "Standard",
+      "In-Stock": "97",
+      "Price": "&#36; 35"
+    }
+  ]
+}

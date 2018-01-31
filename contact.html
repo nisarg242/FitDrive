@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<!-- Nisarg Rana, 21/11/2016, index.html -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title> FitDrive </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/F_icon.ico" />
+    <link href="boot/css/bootstrap.css" rel="stylesheet" />
+    <link href="boot/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <script src="boot/js/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow22.js"></script>
+    <script src="css/jquery.validate.min.js"></script>
+    <script src="css/validation.js"></script>
+    <!--<script>
+            $(document).ready(function () {
+                var geocoder = new google.maps.Geocoder();
+
+                geocoder.geocode({ address: "242 Niro, Omega, CA" }, function (results) {
+                    alert("Latitude for " + results[0].formatted_address + " is " + results[0].geometry.location.lat());
+                });
+
+                var myLatLng = new google.maps.LatLng(36.799793, -119.858135);
+                geocoder.geocode({ location: myLatLng }, function (results) {
+                    alert("Address for latitude and longitude is " + results[0].formatted_address);
+                    var mapOptions = { zoom: 8, center: myLatLng, mapTypeId: google.maps.MapTypeId.ROADMAP }
+                    var map = new google.maps.Map($("#map").get(0), mapOptions);
+
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map
+                    });
+                });
+            });
+    </script>-->
+
+    <style>
+        .social {
+            position: fixed;
+            left: 0;
+            top: 100px;
+            z-index: 10;
+        }
+
+            .social img {
+                width: 50px;
+            }
+            .social img:hover
+            {
+                width:65px;
+                height:50px;
+            }
+            label.error 
+            {
+	            float: none;
+	            color: red;
+	            font-size: 87.5%;
+	            margin-left: .5em;
+            }
+    </style>
+</head>
+<body>
+    <div class="social desktop">
+        <a href="https://www.facebook.com/nisarg.rana.5"><img src="images/icons/Facebook.png" /></a><br />
+        <a href="https://www.linkedin.com/in/nisarg-rana-23574882?trk=nav_responsive_tab_profile_pic"><img src="images/icons/Linkedin.png" /></a><br />
+        <a href="http://www.twitter.com"><img src="images/icons/Twitter.png" /></a><br />
+        <a href="https://www.youtube.com/channel/UCrAHhtRZAhWIPsnzkUDzxkg"><img src="images/icons/YouTube.png" /></a>
+    </div>
+    <div id="container">
+        <!--navigation menu-->
+        <nav style="font-size:20px;" class="navbar navbar-default navbar-fixed-top topnav navbar-inverse" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div style="padding-bottom:10px; padding-top:10px;" class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" href="index.html"><span style="color: #ff6a00; font-size: 25px;"><img src="images/Logo/F_logo1.png" width="40" style="line-height:20px;" /> Fit</span><span style="font-size: 25px;">Drive</span></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul style="padding-bottom:10px; padding-top:10px;" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Product List</a>
+                        </li>
+
+                        <li>
+                            <a href="email.html">Join Email</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div id="banner" class="desktop bnr-margin">
+            <img src="images/contact03.png" class="bnr-margin" alt=" home banner image" />
+        </div>
+        <div id="main" class="" style="overflow:auto;">
+            <main>
+                <h1>CONTACT US, YOUR FEEDBACK MATTERS.</h1>
+                <p>We don’t want to miss a single message! If you have a question or concern about one of our products, please fill out the form below and your message will be delivered to the right person to resolve your issue.</p>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Feedback or Query</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form id="contactForm" action="" method="get">
+                                <div class="form-group">
+                                    <label for="fName">First Name:</label>
+                                    <input type="text" name="fName" id="fName" class="form-control" placeholder="First name" autofocus required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="lName">Last Name:</label>
+                                    <input type="text" name="lName" id="lName" class="form-control" placeholder="Last name " required />
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="gender" id="male" value="male" checked> Male
+                                    </label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
+                                        <input type="radio" name="gender" id="female" value="female"> Female
+                                    </label>
+                                </div><br /><br />
+
+                                <div class="form-group">
+                                    <label for="email">Email Address:</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="name@mail.com" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Phone">Phone Number:</label>
+                                    <input type="tel" name="Phone" id="Phone" class="form-control" placeholder=" (xxx) xxx-xxxx " required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="questions">Questions:</label>
+                                    <textarea name="questions" id="questions" rows="3" class="form-control" placeholder="Type your Question here..."></textarea>
+                                </div>    
+                                    <div style="margin-bottom:25px;">
+                                        <label>Contact me, via:</label>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input id="ckPhone" type="checkbox"> Phone
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-inline">
+                                            <label>
+                                                <input id="ckEmail" type="checkbox"> E-mail
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input id="join" type="submit" value="SUBMIT" class="btn btn-success" />
+                                    <input id="reset" type="reset" value="RESET" class="btn btn-danger" />
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Map</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div style="width:100%;">
+                            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA5KfE2XbudehWa9nDmrXLDhbpgkQUN4tM'></script>
+                            <div style='overflow:hidden;height:550px;width:100%;'>
+                                <div id='gmap_canvas' style='height:550px;width:600px;'>
+                                </div>
+                            </div> 
+                            <a href='https://www.embedmap.net/'>google maps iframe embed</a>
+                            <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=8bdd25d36603b6cb38dd6c762a0ab3de88b67895'></script>
+                            <script type='text/javascript'>function init_map() {
+                                    var myOptions = { zoom: 13, center: new google.maps.LatLng(42.9758145, -82.34748460000003), mapTypeId: google.maps.MapTypeId.ROADMAP };
+                                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(42.9758145, -82.34748460000003) });
+                                    infowindow = new google.maps.InfoWindow({ content: '<strong>FitDrive</strong><br>242 Niro, Omega<br>N7S 6K4 Sarnia<br>' });
+                                    google.maps.event.addListener(marker, 'click',
+                                    function () { infowindow.open(map, marker); }); infowindow.open(map, marker);
+                                } google.maps.event.addDomListener(window, 'load', init_map);</script>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer style="border-top:1px solid #ccc; box-shadow:0px -2px 5px #ccc;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 mobile">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="http://www.facebook.com" class="icns"><span class="fa fa-facebook-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.twitter.com" class="icns"><span class="fa fa-twitter-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.youtube.com" class="icns"><span class="fa fa-youtube-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="http://www.googleplus.com" class="icns"><span class="fa fa-google-plus-square"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" class="icns"><span class="fa fa-linkedin-square"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" col-xs-12">
+                        <ul class="list-inline">
+                            <li>
+                                <a href="index.html" class="ftrfnt">Home</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="about.html" class="ftrfnt">About</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="product.html" class="ftrfnt">Product list</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="email.html" class="ftrfnt">Join Email</a>
+                            </li>
+                            <li class="footer-menu-divider">&sdot;</li>
+                            <li>
+                                <a href="contact.html" class="ftrfnt">Contact</a>
+                            </li>
+                        </ul>
+                        <span class="ftrfnt desktop">&copy; Copyright 2017. All Rights Reserved.</span><br />
+                        <a href="mailto:info@fitdrive.net" class="ftrfnt2 desktop">Request information</a><br />
+                        <span class="ftrfnt2">Nisarg Rana &nbsp;&nbsp; c0685310 </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!--<script>
+        $(document).ready(function () {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var url = 
+                "http://maps.google.com/maps/api/staticmap?sensor=false&center=" + 
+                position.coords.latitude + "," + 
+                position.coords.longitude + 
+                "&zoom=14&size=550x630&markers=color:blue|" +
+                position.coords.latitude + "," + 
+                position.coords.longitude;  
+                
+                $("#map").attr("src", url);
+            }); 
+        });
+		</script>-->
+    
+</body>
+
+</html>
